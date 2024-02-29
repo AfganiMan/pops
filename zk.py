@@ -12,7 +12,7 @@ web3 = Web3(Web3.HTTPProvider(zksync_rpc_url))
 assert web3.isConnected()
 
 
-private_keys_file_path = 'priv.txt'  # Укажите правильный путь к файлу с приватными ключами
+private_keys_file_path = 'priv.txt'  # Укажите правильный путь к файлу с говно приватными ключами
 
 
 private_keys = []
