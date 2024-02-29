@@ -26,14 +26,14 @@ contract_abi = json.loads('[{"anonymous":false,"inputs":[{"indexed":true,"intern
 
 contract = web3.eth.contract(address=contract_address, abi=contract_abi)
 
-# Функция для автоматизации отправки транзакций
+# Функция для автоматизации отправки тран
 def automate_transactions(private_keys, contract):
     for private_key in private_keys:
         account = web3.eth.account.privateKeyToAccount(private_key)
         address = account.address
         nonce = web3.eth.getTransactionCount(address)
 
-        # Генерация случайного значения ETH для отправки
+        # Генерация случайного значения huiETH для отправки
         value = random.uniform(0.0101, 0.0107)
         value_in_wei = Web3.toWei(value, 'ether')
 
