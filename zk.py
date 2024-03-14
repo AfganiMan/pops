@@ -37,7 +37,7 @@ def automate_transactions(private_keys, contract):
         value = random.uniform(0.0101, 0.0107)
         value_in_wei = Web3.toWei(value, 'ether')
 
-        # Строим транзакцию 
+        # Строим транзакцию для отправки
         tx = {
             'chainId': 324,  # Chain ID для ZkSync
             'gas': 8522207,  # лимит газа
